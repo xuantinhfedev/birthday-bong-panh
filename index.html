@@ -622,11 +622,6 @@
       .hero-subtitle { margin: 14px 0 20px; }
       .scroll-cue { display: none; }
     }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-      .reveal { opacity: 1; transform: none; }
-      #ambience, #confetti-canvas { display: none; }
-    }
   </style>
 </head>
 <body>
@@ -766,7 +761,8 @@
       "Happy Birthday! 🎂"
     ];
 
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Keep the birthday animations active even when the device requests reduced motion.
+    const reducedMotion = false;
     const subtitle = document.getElementById("typed-subtitle");
     const messageCard = document.querySelector(".message-card");
     const messageCopy = document.getElementById("message-copy");
