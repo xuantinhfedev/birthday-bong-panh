@@ -595,10 +595,32 @@
       .photo-card:nth-child(5) { grid-column: 1 / -1; width: min(70%, 260px); justify-self: center; }
       .cake-section { min-height: 660px; }
       .final { min-height: 550px; }
+      .music-toggle { bottom: max(12px, env(safe-area-inset-bottom)); left: 12px; padding: 10px 14px; }
+      .back-to-top { right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); }
+      .modal { padding: max(16px, env(safe-area-inset-top)) 12px max(16px, env(safe-area-inset-bottom)); }
+      .modal-figure { max-width: 100%; max-height: 88svh; }
+      .modal img { max-width: min(78vw, 52svh); max-height: min(78vw, 52svh); }
+      .modal-toolbar { gap: 8px; }
+      .modal-btn { min-height: 44px; padding: 8px 12px; }
+      .modal-close { top: max(12px, env(safe-area-inset-top)); right: 12px; }
     }
     @media (max-width: 380px) {
       .photo-grid { grid-auto-rows: 130px; gap: 12px; }
       .candles { gap: 3px; transform: translateX(-50%) scale(.9); }
+      .gallery { padding-right: 16px; padding-left: 16px; }
+      .section-intro { font-size: .94rem; }
+      .modal-btn { gap: 4px; padding-right: 9px; padding-left: 9px; font-size: .8rem; }
+    }
+    @media (hover: none) and (pointer: coarse) {
+      .card-rotate-btn { opacity: 1; }
+      .photo-card:hover { transform: rotate(var(--tilt, 0deg)); }
+      .primary-button, .modal-btn, .music-toggle, .back-to-top { -webkit-tap-highlight-color: transparent; }
+    }
+    @media (max-width: 700px) and (orientation: landscape) and (max-height: 500px) {
+      .hero { min-height: 100svh; padding-top: 36px; padding-bottom: 48px; }
+      .hero-kicker { margin-bottom: 12px; }
+      .hero-subtitle { margin: 14px 0 20px; }
+      .scroll-cue { display: none; }
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
