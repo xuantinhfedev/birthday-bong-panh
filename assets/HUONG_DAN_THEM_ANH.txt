@@ -1,0 +1,20 @@
+═══════════════════════════════════════════════════════════
+   HƯỚNG DẪN THÊM VÀ THAY THẾ ẢNH CHO BỐNG PÀNH
+═══════════════════════════════════════════════════════════
+
+Thư mục này dùng để lưu ảnh kỷ niệm hiển thị trên trang web.
+Hiện tại trang web đã có sẵn giao diện placeholder xinh xắn trong lúc bạn chuẩn bị ảnh!
+
+Khi đã có ảnh, bạn chỉ cần copy các file ảnh vào thư mục này với đúng tên sau:
+
+1. photo-1.jpg  -> Ảnh thứ 1 (A day to remember)
+2. photo-2.jpg  -> Ảnh thứ 2 (Little happy things)
+3. photo-3.jpg  -> Ảnh thứ 3 (Your kind of magic)
+4. photo-4.jpg  -> Ảnh thứ 4 (A heart full of sunshine)
+5. photo-5.jpg  -> Ảnh thứ 5 (More memories to come)
+
+Lưu ý:
+- Định dạng hỗ trợ: .jpg, .jpeg, .png (nếu dùng .png, bạn có thể đổi tên hoặc sửa đuôi trong file index.html).
+- Tỉ lệ ảnh đẹp nhất: 3:4 hoặc ảnh chụp dọc/vuông từ điện thoại.
+- Sau khi thêm ảnh, bạn chỉ cần tải lại (F5) trang web là ảnh mới sẽ tự động hiển thị!
+- (Tùy chọn) Thêm nhạc nền: Đặt file nhạc tên `music.mp3` vào thư mục này để phát nhạc sinh nhật.
